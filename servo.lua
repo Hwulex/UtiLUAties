@@ -1,5 +1,5 @@
 servo = {}
-servo.pin = 5 --this is GPIO2
+servo.pin = 5 --this is GPIO1
 servo.value = 1500
 servo.id = "servo"
 
