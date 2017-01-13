@@ -15,9 +15,8 @@ tmr.alarm(0,2000,1,function() -- 50Hz
 end)
 
 
---[[
-Spectrum
-400 = 180 deg
-1400 = 90 deg
-2400 = 180 deg
---]]
+
+-- Spectrum
+-- 400 = 180 deg
+-- 1400 = 90 deg
+-- 2400 = 180 deg
