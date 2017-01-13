@@ -1,5 +1,5 @@
 servo = {}
-servo.pin = 5 --this is GPIO1
+servo.pin = 2 --this is GPIO1
 servo.value = 1500
 servo.id = "servo"
 
@@ -13,3 +13,11 @@ tmr.alarm(0,2000,1,function() -- 50Hz
         gpio.write(servo.pin, gpio.LOW)
     end
 end)
+
+
+--[[
+Spectrum
+400 = 180 deg
+1400 = 90 deg
+2400 = 180 deg
+--]]
