@@ -26,19 +26,19 @@ function launch()
 end
 
 function checkWIFI()
-  if ( NUMWIFITRIES > MAXWIFITRIES ) then
-    print( "Sorry. Not able to connect" )
-  else
-    ipAddr = wifi.sta.getip()
-    if ( ( ipAddr ~= nil ) and ( ipAddr ~= "0.0.0.0" ) ) then
-		launch()
-    else
-      -- Reset alarm again
-      tmr.alarm( 0 , 2500 , 0 , checkWIFI )
-      print( "Checking WIFI..." .. NUMWIFITRIES )
-      NUMWIFITRIES = NUMWIFITRIES + 1
-    end
-  end
+	if ( NUMWIFITRIES > MAXWIFITRIES ) then
+		print( "Sorry. Not able to connect" )
+	else
+		ipAddr = wifi.sta.getip()
+		if ( ( ipAddr ~= nil ) and ( ipAddr ~= "0.0.0.0" ) ) then
+			launch()
+		else
+			-- Reset alarm again
+			tmr.alarm( 0 , 2500 , 0 , checkWIFI )
+			print( "Checking WIFI..." .. NUMWIFITRIES )
+			NUMWIFITRIES = NUMWIFITRIES + 1
+		end
+	end
 end
 
 
