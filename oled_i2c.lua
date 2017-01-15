@@ -1,7 +1,9 @@
+-- http://ashishware.com/Esp8266Display.shtml
+
 a = true
 -- setup I2c and connect display
 function init_i2c_display()
-     i2c.setup(0, 4, 3, i2c.SLOW)
+     i2c.setup(0, 14, 2, i2c.SLOW)
      disp = u8g.ssd1306_128x64_i2c(0x3c)
 end
 -- the draw() routine

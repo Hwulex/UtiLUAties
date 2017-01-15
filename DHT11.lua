@@ -3,7 +3,7 @@
 -- Learn: www.roboindia.com/tutorials
 -- Ref-esp8266.com
 
-pin = 3
+pin = 2
 
 
 Humidity = 0
