@@ -13,6 +13,7 @@ function A.new()
 	setmetatable(o, { __index = A })
 
 	o.b		= B
+	o.c		= C
 	return o
 end
 
@@ -24,12 +25,12 @@ B = {
 	bar = 2,
 
 	m = function( self )
-		print( a:m() )
+		print( a.c:m() )
 	end
 }
 
 C = {
-	nod = 3,
+	nod = "b",
 
 	m = function( self )
 		print( self.nod )
